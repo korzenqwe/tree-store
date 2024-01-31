@@ -45,7 +45,6 @@ describe('TreeStore', () => {
   })
 
   it('should return all children of item by id', () => {
-    console.log(treeStore.getAllChildren(2))
     expect(treeStore.getAllChildren(2)).toEqual([
       { id: 4, parent: 2, type: 'test' },
       { id: 5, parent: 2, type: 'test' },
